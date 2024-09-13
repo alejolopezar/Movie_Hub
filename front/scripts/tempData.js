@@ -60,3 +60,7 @@ const tempData = [
       "https://th.bing.com/th/id/OIP.gjF_px0_PyPzmI2fButiWAHaLH?rs=1&pid=ImgDetMain",
   },
 ];
+
+module.exports = {
+  tempData
+};
