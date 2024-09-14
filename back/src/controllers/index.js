@@ -5,10 +5,10 @@
     // Vamos a ir a la base de datos a pedir la información de las peliculas
     // Y responder al cliente con la información obtenida.
 
-    const moviesController = (req, res) => {
-        res.status(200).send("Estamos recibiendo una solicitud y próximamente estarán disponibles los datos de películas.");
-    }
+    // const moviesController = (req, res) => {
+    //     res.status(200).send("Estamos recibiendo una solicitud y próximamente estarán disponibles los datos de películas.");
+    // }
 
-    module.exports = {
-        moviesController,
-    };
+    // module.exports = {
+    //     moviesController,
+    // };

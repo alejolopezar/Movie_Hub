@@ -3,10 +3,10 @@
 // Tengo definida la solicitud a GET /users => controlador
 
 const { Router } = require("express");
-const { moviesController } = require("../controllers");
+const moviesRouter = require("./moviesRouter");
 
 const router = Router();
 
-router.get("/movies", moviesController);
+router.use("/movies", moviesRouter);
 
 module.exports = router;
