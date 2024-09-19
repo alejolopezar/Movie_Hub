@@ -22,7 +22,7 @@ const { tempData } = require("./tempData");
 //     arrayTarjetas.forEach(tarjeta => contenedor_tarjetas.appendChild(tarjeta));
 // });
 
-const promise = axios.get("https://students-api.up.railway.app/movies");
+const promise = axios.get("http://localhost:3000/movies");
 console.log(promise);
 promise
 .then((res) => {

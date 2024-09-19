@@ -1,5 +1,8 @@
+const movieServices = require("../services/movieServices");
+
 module.exports = {
-    getAllmovies: (req, res) => {
-        res.status(200).send("Estamos recibiendo una solicitud y próximamente estarán disponibles los datos de películas.");
+    getAllmovies: async (req, res) => {
+        const movies = await movieServices.getAllmovies();
+        res.status(200).json(movies);
     }
 };
