@@ -154,4 +154,9 @@ module.exports = {
     const movies = await Movie.find();
   return movies;
     },
+
+    createMovie: async (inputMovie) => {
+      const newMovie = await Movie.create(inputMovie);
+      return newMovie;
+    }
 };

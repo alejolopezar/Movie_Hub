@@ -48,9 +48,11 @@ function crearTarjeta (pelicula){
 
 // seleccionar el contenedor donde queremos agregar las peliculas
 const contenedor_tarjetas = document.getElementById ("contenedor_tarjetas");
-  
-// vaciar el contenido actual del contenedor
-contenedor_tarjetas.innerHTML = "";
+
+if(contenedor_tarjetas){
+    // vaciar el contenido actual del contenedor
+    contenedor_tarjetas.innerHTML = "";
+}
 
 module.exports = {
     crearTarjeta,

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body>
+
+    <header>
+      <h1>EL SÉPTIMO ARTE</h1>
+      <nav>
+          <ul>
+              <li><a href="historia_cine.html"><b>Historia del cine</b></a></li>
+              <li><a href="index.html"><b>Peliculas</b></a></li>
+              <li><a href="proyecto.html"><b>Acerca de este Proyecto</b></a></li>
+              <li><a href="createdMovie.html"><b>Ingresar Pelicula</b></a></li>
+          </ul>
+      </nav>
+  </header>
+
+  <main>
+    <section id="titulo">
+        <h2>FORMULARIO</h2>
+    </section>
+
+    <section id="formulario_peliculas">
+        <form id="form">
+            <input type="text" id="titleInput" class= "input" placeholder="Titulo" required>
+            <input type="number" id="yearInput" class= "input"placeholder="Año" required min="1800" max="2025">
+            <input type="text" id="directorInput" class= "input"placeholder="Director"required>
+            <input type="text" id="durationInput" class= "input"placeholder="Duracion"required>
+            <input type="text" id="genreInput" class= "input"placeholder="Genero"required>
+            <input type="number" id="rateInput" class= "input"placeholder="Calificacion"required min="0" max="10">
+            <input type="url" id="posterInput" class= "input"placeholder="Link de la cartelera"required>
+            <button type="submit" id="buttonSubmit">Agregar Pelicula</button>
+            <button type="reset" id="resetButton">Reset</button>
+          </form>
+    </section>
+</main>
+
+<footer> 
+
+</footer>
+
+<script src="./public/bundle.js"></script>
+    
+  </body>
+</html>

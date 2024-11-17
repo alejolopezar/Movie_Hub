@@ -2,7 +2,8 @@
 const { contenedor_tarjetas, crearTarjeta } = require("./renderCards");
 const axios = require("axios");
 const { tempData } = require("./tempData");
-
+const { form } = require("./addForm");
+console.log("prueba");
 // // Se hace la solicitud GET. Esta solicitud es asincrona
 // $.get("https://students-api.up.railway.app/movies")
 // .done((data) => {
@@ -24,7 +25,14 @@ const { tempData } = require("./tempData");
 
 const promise = axios.get("http://localhost:3000/movies");
 console.log(promise);
-promise
+
+const buttonSubmit = document.getElementById("buttonSubmit");
+if (buttonSubmit){
+    console.log("se ejecuto if")
+    form();
+}
+if(contenedor_tarjetas){
+    promise
 .then((res) => {
     //"Mapear" el listado de peliculas para convertirlos en elementos HTML
     const arrayTarjetas = res.data.map(crearTarjeta);  
@@ -42,3 +50,4 @@ promise
      arrayTarjetas.forEach(tarjeta => contenedor_tarjetas.appendChild(tarjeta));
      console.log("se ejecuto catch");
 })
+}

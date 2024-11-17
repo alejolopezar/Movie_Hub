@@ -75,3 +75,35 @@ body {
   p {
     color: #fbff00;
   }
+
+
+
+  #formulario_peliculas {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    align-items: center;
+  }
+
+  .input::placeholder {
+    color: #fbff00;
+  }
+
+  .input {
+    background-color: #191b18;
+    border-radius: 5px;
+    width: 100%;
+    color: #fbff00;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  button {
+    width: 20vw;
+    height: 5vw;
+    border-radius: 15px;
+    background-color: #e5ff00;
+    color: #000000;
+    margin: 40px;
+    margin-left: 200px;
+  }
